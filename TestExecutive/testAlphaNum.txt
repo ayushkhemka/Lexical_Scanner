@@ -1,0 +1,2 @@
+bool isSpecialCharacterPair(int sp, int spNext);
+static istream* _pIn;

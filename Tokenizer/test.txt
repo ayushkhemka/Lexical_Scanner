@@ -1,0 +1,41 @@
+/* Requirement 4 */
+//Reading AlphaNums and punctuators
+string a = "";
+int p_Test = 0;
+void function(string a, int _pTest) { return true; }
+//Reading special chars
+p_Test++;
+a += "Hello";
+std::cout << a;
+//Reading C style comments
+/* This is a C comment 
+Split over two lines */
+//Reading CPP style comments
+//This is a CPP style comment
+//Reading Quoted Strings
+a = "Hello\n\'Ayush\'\n\'Khemka\'"
+//Special Case
+for (;;) { return true; }
+
+//SemiExp
+#ifndef SEMIEXPRESSION_H
+
+#include <vector>
+#include "../Tokenizer/Tokenizer.h"
+
+namespace Scanner
+{
+  using Token = std::string;
+
+  class SemiExp: public ITokCollection
+  {
+  public:
+    SemiExp(Toker* pToker = nullptr) { for(;;) return true; }
+    SemiExp(const SemiExp&) = delete;
+  private:
+    std::vector<Token> _tokens;
+    Toker* _pToker;
+		bool _returnComments;
+  };
+}
+#endif
